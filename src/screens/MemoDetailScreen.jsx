@@ -47,14 +47,14 @@ export default function MemoDetailScreen(props) {
       <CircleButton
         style={{ top: 60, bottom: 'auto' }}
         name="pencil"
-        onPress={() => { navigation.navigate('MemoEdit'); }}
+        onPress={() => { navigation.navigate('MemoEdit', { id: memo.id, bodyText: memo.bodyText }); }}
       />
     </View>
   );
 }
 
 MemoDetailScreen.propTypes = {
-  routes: shape({
+  route: shape({
     params: shape({ id: string }),
   }).isRequired,
 };
