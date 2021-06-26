@@ -18,9 +18,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "jp.hisa.memoapp2",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "jp.hisa.memoapp2",
+      "versionCode": 1,
+      "permissions": [],
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon_adaptive_foreground.png",
         "backgroundImage": "./assets/icon_adaptive_background.png"
